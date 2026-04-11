@@ -1,0 +1,21 @@
+name: Identity
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  identity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify repository identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f README.md
+          test -f LICENSE
+          grep -F "ANAGNORIUM" README.md
+          grep -F "ANAGNORIUM is the terminal recognition plane of the Verifrax stack." README.md

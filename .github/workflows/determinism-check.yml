@@ -1,0 +1,21 @@
+name: Determinism Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  determinism:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify bounded surface
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f README.md
+          test -f CHARTER.md
+          test -f NON-ROLE.md
+          grep -F "ANAGNORIUM is the terminal recognition plane of the Verifrax stack." README.md
