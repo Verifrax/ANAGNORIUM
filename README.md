@@ -1,77 +1,102 @@
 # ANAGNORIUM
 
-ANAGNORIUM is the terminal recognition plane of the Verifrax stack.
+ANAGNORIUM is the Verifrax terminal recognition boundary: the public surface that states what has been formally recognized in-system without becoming law, execution, verification, or recourse.
 
-## Proof artifacts
+## Status
 
-This repository is part of the VERIFRAX proof perimeter.
+Active public sovereign boundary with an explicit recognition role inside the Verifrax stack.
 
-- **ARTIFACT-0006**
-- **ARTIFACT-0005**
-- **ARTIFACT-0004**
-- **ARTIFACT-0003**
-- **ARTIFACT-0002**
-- **ARTIFACT-0001**
+## Boundary
 
-**Canonical public proof surface:** https://proof.verifrax.net  
-**Canonical proof publication repository:** https://github.com/Verifrax/proof  
-**Canonical evidence root:** https://github.com/Verifrax/VERIFRAX
+This repository owns terminal recognition only.
 
-## What this repository is
+Recognition here means a bounded public acknowledgment that a state, classification, designation, or terminal reading has been recognized by the system boundary for downstream interpretation.
 
-ANAGNORIUM owns recognition-of-record.
+It does not author constitutional law.
+It does not compute or hold canonical world-state.
+It does not perform reconciliation.
+It does not execute.
+It does not verify.
+It does not issue authority-of-record.
+It does not publish proof as proof authority.
+It does not operate recourse.
 
-It defines the point at which admissible evidence, text, record, artifact, event, or verified structure yields a truth that can no longer remain indeterminate within the lawful system.
+## What it does
 
-**ANAGNORIUM recognizes what has become unavoidable.**
+- defines the public recognition surface of ANAGNORIUM
+- states what recognition means inside the Verifrax system
+- preserves recognition language as a bounded sovereign function
+- provides a clean role surface for adjacent repositories and public readers
+- anchors recognition as terminal acknowledgment rather than legal, runtime, or evidentiary authority
 
-## What this repository is not
+## What it does not do
 
-ANAGNORIUM is not:
-
-- authority-of-record
-- execution-of-record
-- verification-of-record
-- proof publication
-- recourse-of-record
-- claims processing
-- remedy allocation
-- support escalation
-- generic analysis
-
-ANAGNORIUM does not assign burden.
-ANAGNORIUM does not determine compensation.
-ANAGNORIUM does not close disputes procedurally.
-
-## Stack position
-
-```text
-SYNTAGMARIUM = law
-ORBISTIUM    = state
-CONSONORIUM  = reconciliation
-TACHYRIUM    = cognition
-AUCTORISEAL  = authority
-CORPIFORM    = execution
-VERIFRAX     = verification
-ANAGNORIUM   = terminal recognition
-REGRESSORIUM = terminal recourse
-```
-
-## Boundary rule
-
-```text
-verification -> terminal recognition -> terminal recourse
-```
+- not constitutional doctrine; that belongs to SYNTAGMARIUM
+- not canonical world-state; that belongs to ORBISTIUM
+- not reconciliation or repair; that belongs to CONSONORIUM
+- not sovereign cognition; that belongs to TACHYRIUM
+- not authority issuance; that belongs to AUCTORISEAL
+- not governed execution; that belongs to CORPIFORM
+- not enforcement boundary; that belongs to cicullis
+- not public verification; that belongs to VERIFRAX-verify
+- not proof publication; that belongs to proof
+- not intake; that belongs to apply
+- not terminal recourse; that belongs to REGRESSORIUM
 
 ## Adjacent sovereign surfaces
 
-- **SYNTAGMARIUM** defines the law under which recognition is lawful.
-- **ORBISTIUM** stores accepted state and historical epoch memory.
-- **CONSONORIUM** reconciles drift and projection.
-- **TACHYRIUM** transforms ambiguity into bounded machine-legible candidates.
-- **VERIFRAX** establishes admissible verified structure.
-- **REGRESSORIUM** converts recognized truth into attributable burden, recourse posture, remedy path, and closure state.
+- `SYNTAGMARIUM` defines constitutional law and doctrine
+- `ORBISTIUM` defines canonical world-state
+- `CONSONORIUM` defines reconciliation / repair / projection
+- `TACHYRIUM` defines bounded sovereign cognition
+- `REGRESSORIUM` defines terminal recourse after recognition boundaries have been reached
 
-## License
+ANAGNORIUM is paired most closely with REGRESSORIUM.
 
-Apache License Version 2.0
+ANAGNORIUM recognizes.
+REGRESSORIUM handles recourse.
+
+That separation must remain explicit.
+
+## Public surface
+
+The public surface of this repository is its repository identity, README boundary, and any explicitly published ANAGNORIUM recognition materials carried by this repository.
+
+Publication here is not law.
+Publication here is not execution.
+Publication here is not verification.
+Publication here is not recourse adjudication.
+
+## Package / host / repo truth
+
+Repository truth for ANAGNORIUM lives in this repository.
+
+If a package, site, or host is later attached, those surfaces must remain subordinate to the bounded repository role declared here unless and until the system explicitly states otherwise.
+
+## Recognition meaning in-system
+
+Recognition in-system means the stack can publicly say that a thing has been recognized as having a certain standing, classification, or terminal reading within the ANAGNORIUM boundary.
+
+That does not by itself mean:
+
+- the thing became constitutional law
+- the thing became canonical world-state
+- the thing was verified
+- the thing was executed
+- the thing exhausted recourse
+- the thing became final proof authority
+
+Recognition is terminal acknowledgment, not total sovereignty.
+
+## Not this
+
+ANAGNORIUM is not a court.
+ANAGNORIUM is not a verifier.
+ANAGNORIUM is not an execution engine.
+ANAGNORIUM is not the constitutional source of truth.
+ANAGNORIUM is not the canonical world-state ledger.
+ANAGNORIUM is not recourse machinery.
+
+A cold reader should not confuse ANAGNORIUM with REGRESSORIUM:
+ANAGNORIUM recognizes;
+REGRESSORIUM addresses recourse.
