@@ -1,0 +1,28 @@
+{
+  "object_type": "RecognitionObject",
+  "recognition_object_id": "recognition-object-0001",
+  "status": "ACTIVE_TRUTH",
+  "claim_class_ref": "https://github.com/Verifrax/SYNTAGMARIUM/blob/main/claim-classes/recognition-object.json",
+  "recognition_index_ref": "recognitions/current/index.json",
+  "historical_archive_ref": "recognitions/history/",
+  "governing_law_version_ref": "https://github.com/Verifrax/SYNTAGMARIUM/blob/main/law/versions/current/law-version-0001.json",
+  "accepted_epoch_ref": "https://github.com/Verifrax/ORBISTIUM/blob/main/epochs/current/accepted-epoch-0001.json",
+  "authority_object_ref": "https://github.com/Verifrax/AUCTORISEAL/blob/main/authorities/current/authority-object-0001.json",
+  "execution_receipt_ref": "https://github.com/Verifrax/CORPIFORM/blob/main/receipts/current/execution-receipt-0001.json",
+  "verification_result_ref": "https://github.com/Verifrax/VERIFRAX/blob/main/verification/results/current/verification-result-0001.json",
+  "subject_ref": "https://github.com/Verifrax/VERIFRAX/blob/main/evidence/artifact-0005/artifact-0005.json",
+  "recognition_scope": "terminal admissibility and recognition of the active artifact-0005 governed execution boundary",
+  "recognition_status": "RECOGNIZED",
+  "admissibility_status": "ADMISSIBLE",
+  "terminal_reading": "artifact-0005 is admissible for terminal recognition as the current verified governed execution boundary under already-published law, epoch, authority, execution, and verification inputs",
+  "limits": [
+    "recognition does not assign burden",
+    "recognition does not assign remedy",
+    "recognition does not perform closure",
+    "recognition does not redefine law, epoch, authority, execution, or verification"
+  ],
+  "notes": [
+    "Current machine-readable recognition object for the active recognized boundary.",
+    "Historical recognition objects must not outrank this current recognition object."
+  ]
+}
