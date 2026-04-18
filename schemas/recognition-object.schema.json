@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://verifrax.net/anagnorium/schemas/recognition-object.schema.json",
-  "title": "Recognition object",
+  "title": "ANAGNORIUM recognition object",
   "type": "object",
   "required": [
     "recognition_id",
