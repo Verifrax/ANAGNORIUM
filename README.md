@@ -1,6 +1,8 @@
 # ANAGNORIUM
 
-ANAGNORIUM is the Verifrax terminal-recognition boundary: the public surface that determines admissibility and recognition of bounded claims without becoming law, accepted epoch, execution, verification, or recourse.
+ANAGNORIUM is the terminal recognition plane of the Verifrax stack.
+
+It determines admissibility and recognition of bounded claims without becoming law, accepted epoch, execution, verification, or recourse.
 
 ## Status
 
