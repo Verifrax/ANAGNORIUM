@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://verifrax.net/anagnorium/schemas/recognition-object.schema.json",
+  "title": "Recognition object",
+  "type": "object",
+  "required": [
+    "recognition_id",
+    "claim_class_id",
+    "law_version_ref",
+    "accepted_epoch_ref",
+    "status",
+    "basis",
+    "result",
+    "historical"
+  ],
+  "properties": {
+    "recognition_id": { "type": "string", "minLength": 1 },
+    "claim_class_id": { "type": "string", "minLength": 1 },
+    "law_version_ref": { "type": "string", "minLength": 1 },
+    "accepted_epoch_ref": { "type": "string", "minLength": 1 },
+    "authority_ref": { "type": "string" },
+    "execution_receipt_ref": { "type": "string" },
+    "verification_result_ref": { "type": "string" },
+    "status": { "type": "string", "enum": ["recognized", "rejected", "indeterminate"] },
+    "basis": {
+      "type": "object",
+      "required": ["paths"],
+      "properties": {
+        "paths": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "result": {
+      "type": "object",
+      "required": ["admissibility", "recognition_scope"],
+      "properties": {
+        "admissibility": { "type": "string", "enum": ["admissible", "inadmissible"] },
+        "recognition_scope": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "historical": { "type": "boolean" }
+  },
+  "additionalProperties": false
+}
