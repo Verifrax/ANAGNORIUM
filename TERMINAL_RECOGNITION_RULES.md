@@ -6,3 +6,5 @@
 4. Recognition must distinguish active current recognition from historical recognition.
 5. Recognition must bind to explicit evidence paths.
 6. Recognition must remain distinct from recourse.
+
+The current recognition object of record is `recognitions/current/recognition-object-0001.json`.

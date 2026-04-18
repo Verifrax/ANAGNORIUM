@@ -18,3 +18,7 @@ Recognition is lawful only when:
 Recognition does not assign burden.
 Recognition does not assign remedy.
 Recognition does not define closure.
+
+## Recognition chain
+
+- one current recognition-object entry surface is published at `recognitions/current/recognition-object-0001.json`

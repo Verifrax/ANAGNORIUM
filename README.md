@@ -27,6 +27,7 @@ It does not replace adjacent sovereign boundaries.
 - defines admissibility and interpretive boundary rules
 - publishes recognition-object structure
 - publishes current and historical recognition indexes
+- publishes the current recognition-object entry surface
 - preserves recognition as a distinct sovereign function
 
 ## What it does not do
@@ -42,8 +43,14 @@ It does not replace adjacent sovereign boundaries.
 
 ## Public surface
 
-The public surface of this repository is its repository identity, README boundary, recognition doctrine, recognition-object schema, and explicit current/historical recognition indexes.
+The public surface of this repository is its repository identity, README boundary, recognition doctrine, recognition-object schema, the current recognition-object entry surface, and explicit current/historical recognition indexes.
 
 Recognition here is not remedy.
 Recognition here is not burden assignment.
 Recognition here is not closure.
+
+## Recognition-object entry surface
+
+- current active recognition-object entry surface: `recognitions/current/recognition-object-0001.json`
+- current recognition index: `recognitions/current/index.json`
+- historical recognition-object archive: `recognitions/history/`

@@ -1,6 +1,13 @@
 {
   "object_type": "RecognitionIndex",
-  "status": "current",
-  "historical": false,
-  "entries": []
+  "status": "ACTIVE_TRUTH",
+  "current_recognition_object_ref": "recognitions/current/recognition-object-0001.json",
+  "entries": [
+    {
+      "recognition_object_id": "recognition-object-0001",
+      "path": "recognitions/current/recognition-object-0001.json",
+      "subject_ref": "https://github.com/Verifrax/VERIFRAX/blob/main/evidence/artifact-0005/artifact-0005.json",
+      "recognition_status": "RECOGNIZED"
+    }
+  ]
 }
