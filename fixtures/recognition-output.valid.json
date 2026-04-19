@@ -1,0 +1,29 @@
+{
+  "object_type": "RECOGNITION_OUTPUT",
+  "schema_version": "0.1.0",
+  "output_id": "anagnorium-output-0001",
+  "generated_at": "2026-04-19T13:45:11Z",
+  "input_class": "verification-result-reference",
+  "output_class": "recognition-object",
+  "status": "ACTIVE_TRUTH",
+  "summary": "Terminal recognition emitted with explicit non-recourse boundary.",
+  "recognition_scope": "terminal admissibility and recognition only",
+  "boundary_assertions": {
+    "not-law": true,
+    "not-state": true,
+    "not-authority": true,
+    "not-execution": true,
+    "not-verification": true,
+    "not-burden": true,
+    "not-remedy": true,
+    "not-closure": true,
+    "not-recourse": true,
+    "not-proof": true,
+    "not-intake": true,
+    "recognition-distinct-from-recourse": true
+  },
+  "basis_refs": [
+    "recognitions/current/recognition-object-0001.json",
+    "recognitions/current/index.json"
+  ]
+}

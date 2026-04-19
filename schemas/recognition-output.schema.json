@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://verifrax.net/anagnorium/schemas/recognition-output.schema.json",
+  "title": "ANAGNORIUM Recognition Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "object_type",
+    "schema_version",
+    "output_id",
+    "generated_at",
+    "input_class",
+    "output_class",
+    "status",
+    "summary",
+    "recognition_scope",
+    "boundary_assertions",
+    "basis_refs"
+  ],
+  "properties": {
+    "object_type": { "const": "RECOGNITION_OUTPUT" },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "output_id": { "type": "string", "minLength": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "input_class": {
+      "enum": [
+        "claim-class-reference",
+        "law-version-reference",
+        "accepted-epoch-reference",
+        "authority-object-reference",
+        "execution-receipt-reference",
+        "verification-result-reference",
+        "recognition-case-reference",
+        "operator-request"
+      ]
+    },
+    "output_class": {
+      "enum": [
+        "recognition-object",
+        "recognition-index-update"
+      ]
+    },
+    "status": {
+      "enum": [
+        "ACTIVE_TRUTH",
+        "HISTORICAL_SNAPSHOT",
+        "DERIVED_PROJECTION"
+      ]
+    },
+    "summary": { "type": "string", "minLength": 1 },
+    "recognition_scope": { "type": "string", "minLength": 1 },
+    "boundary_assertions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "not-law",
+        "not-state",
+        "not-authority",
+        "not-execution",
+        "not-verification",
+        "not-burden",
+        "not-remedy",
+        "not-closure",
+        "not-recourse",
+        "not-proof",
+        "not-intake",
+        "recognition-distinct-from-recourse"
+      ],
+      "properties": {
+        "not-law": { "const": true },
+        "not-state": { "const": true },
+        "not-authority": { "const": true },
+        "not-execution": { "const": true },
+        "not-verification": { "const": true },
+        "not-burden": { "const": true },
+        "not-remedy": { "const": true },
+        "not-closure": { "const": true },
+        "not-recourse": { "const": true },
+        "not-proof": { "const": true },
+        "not-intake": { "const": true },
+        "recognition-distinct-from-recourse": { "const": true }
+      }
+    },
+    "basis_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}

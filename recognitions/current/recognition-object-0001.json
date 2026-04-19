@@ -24,5 +24,11 @@
   "notes": [
     "Current machine-readable recognition object for the active recognized boundary.",
     "Historical recognition objects must not outrank this current recognition object."
+  ],
+  "boundary_assertions": [
+    "recognition does not assign burden",
+    "recognition does not assign remedy",
+    "recognition does not perform closure",
+    "recognition does not redefine law, epoch, authority, execution, or verification"
   ]
 }

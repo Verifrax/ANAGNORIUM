@@ -1,50 +1,70 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://verifrax.net/anagnorium/schemas/recognition-object.schema.json",
-  "title": "ANAGNORIUM recognition object",
+  "title": "ANAGNORIUM Recognition Object",
   "type": "object",
+  "additionalProperties": false,
   "required": [
-    "recognition_id",
-    "claim_class_id",
-    "law_version_ref",
-    "accepted_epoch_ref",
+    "object_type",
+    "recognition_object_id",
     "status",
-    "basis",
-    "result",
-    "historical"
+    "claim_class_ref",
+    "recognition_index_ref",
+    "historical_archive_ref",
+    "governing_law_version_ref",
+    "accepted_epoch_ref",
+    "authority_object_ref",
+    "execution_receipt_ref",
+    "verification_result_ref",
+    "recognition_scope",
+    "recognition_status",
+    "admissibility_status",
+    "terminal_reading",
+    "boundary_assertions",
+    "notes"
   ],
   "properties": {
-    "recognition_id": { "type": "string", "minLength": 1 },
-    "claim_class_id": { "type": "string", "minLength": 1 },
-    "law_version_ref": { "type": "string", "minLength": 1 },
+    "object_type": { "const": "RecognitionObject" },
+    "recognition_object_id": { "type": "string", "minLength": 1 },
+    "status": {
+      "enum": [
+        "ACTIVE_TRUTH",
+        "HISTORICAL_SNAPSHOT"
+      ]
+    },
+    "claim_class_ref": { "type": "string", "minLength": 1 },
+    "recognition_index_ref": { "type": "string", "minLength": 1 },
+    "historical_archive_ref": { "type": "string", "minLength": 1 },
+    "governing_law_version_ref": { "type": "string", "minLength": 1 },
     "accepted_epoch_ref": { "type": "string", "minLength": 1 },
-    "authority_ref": { "type": "string" },
-    "execution_receipt_ref": { "type": "string" },
-    "verification_result_ref": { "type": "string" },
-    "status": { "type": "string", "enum": ["recognized", "rejected", "indeterminate"] },
-    "basis": {
-      "type": "object",
-      "required": ["paths"],
-      "properties": {
-        "paths": {
-          "type": "array",
-          "items": { "type": "string", "minLength": 1 },
-          "minItems": 1,
-          "uniqueItems": true
-        }
-      },
-      "additionalProperties": false
+    "authority_object_ref": { "type": "string", "minLength": 1 },
+    "execution_receipt_ref": { "type": "string", "minLength": 1 },
+    "verification_result_ref": { "type": "string", "minLength": 1 },
+    "recognition_scope": { "type": "string", "minLength": 1 },
+    "recognition_status": {
+      "enum": [
+        "RECOGNIZED",
+        "REJECTED",
+        "INDETERMINATE"
+      ]
     },
-    "result": {
-      "type": "object",
-      "required": ["admissibility", "recognition_scope"],
-      "properties": {
-        "admissibility": { "type": "string", "enum": ["admissible", "inadmissible"] },
-        "recognition_scope": { "type": "string", "minLength": 1 }
-      },
-      "additionalProperties": false
+    "admissibility_status": {
+      "enum": [
+        "ADMISSIBLE",
+        "INADMISSIBLE"
+      ]
     },
-    "historical": { "type": "boolean" }
-  },
-  "additionalProperties": false
+    "terminal_reading": { "type": "string", "minLength": 1 },
+    "boundary_assertions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "notes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
 }

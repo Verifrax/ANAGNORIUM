@@ -6,7 +6,7 @@ It determines admissibility and recognition of bounded claims without becoming l
 
 ## Status
 
-Active public sovereign boundary with an explicit terminal-recognition role inside the Verifrax stack.
+Active public sovereign boundary with an explicit terminal-recognition role, machine-readable boundary policy, typed recognition schemas, and audit surfaces.
 
 ## Boundary
 
@@ -26,6 +26,8 @@ It does not replace adjacent sovereign boundaries.
 - defines terminal-recognition doctrine
 - defines admissibility and interpretive boundary rules
 - publishes recognition-object structure
+- publishes machine-readable boundary policy through `contracts/boundary-policy.json`
+- publishes typed recognition output and audit schemas through `schemas/`
 - publishes current and historical recognition indexes
 - publishes the current recognition-object entry surface
 - preserves recognition as a distinct sovereign function
@@ -43,7 +45,7 @@ It does not replace adjacent sovereign boundaries.
 
 ## Public surface
 
-The public surface of this repository is its repository identity, README boundary, recognition doctrine, recognition-object schema, the current recognition-object entry surface, and explicit current/historical recognition indexes.
+The public surface of this repository is its repository identity, README boundary, recognition doctrine, `contracts/boundary-policy.json`, typed schemas, the current recognition-object entry surface, and explicit current/historical recognition indexes.
 
 Recognition here is not remedy.
 Recognition here is not burden assignment.
