@@ -1,0 +1,28 @@
+{
+  "object_type": "RECOGNITION_AUDIT_RECORD",
+  "schema_version": "0.1.0",
+  "audit_id": "anagnorium-audit-0001",
+  "timestamp": "2026-04-19T13:45:11Z",
+  "input_class": "operator-request",
+  "requested_output_class": "burden-assignment",
+  "decision": "rejected",
+  "rejection_reason": "would-assign-burden",
+  "boundary_zone": "outside-anagnorium-boundary",
+  "sovereign_collision_flags": {
+    "law": false,
+    "state": false,
+    "authority": false,
+    "execution": false,
+    "verification": false,
+    "burden": true,
+    "remedy": false,
+    "closure": false,
+    "recourse": true,
+    "proof": false,
+    "intake": false
+  },
+  "notes": [
+    "Burden assignment belongs downstream of terminal recognition.",
+    "Request must leave ANAGNORIUM and move toward REGRESSORIUM."
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "object_type": "BOUNDARY_POLICY",
+  "surface": "ANAGNORIUM",
+  "schema_version": "0.1.0",
+  "state_type": "ACTIVE_TRUTH",
+  "role": "terminal-recognition",
+  "allowed_inputs": [
+    "claim-class-reference",
+    "law-version-reference",
+    "accepted-epoch-reference",
+    "authority-object-reference",
+    "execution-receipt-reference",
+    "verification-result-reference",
+    "recognition-case-reference",
+    "operator-request"
+  ],
+  "allowed_output_classes": [
+    "recognition-object",
+    "recognition-output-record",
+    "recognition-audit-record",
+    "recognition-index-update"
+  ],
+  "forbidden_output_classes": [
+    "law-object",
+    "accepted-state-object",
+    "authority-object",
+    "execution-receipt",
+    "verification-verdict",
+    "burden-assignment",
+    "remedy-matrix",
+    "closure-state",
+    "recourse-object",
+    "proof-publication-object",
+    "intake-decision-object"
+  ],
+  "required_boundary_assertions": [
+    "not-law",
+    "not-state",
+    "not-authority",
+    "not-execution",
+    "not-verification",
+    "not-burden",
+    "not-remedy",
+    "not-closure",
+    "not-recourse",
+    "not-proof",
+    "not-intake",
+    "recognition-distinct-from-recourse"
+  ],
+  "rejection_reasons": [
+    "input-class-unsupported",
+    "output-class-unsupported",
+    "would-author-law",
+    "would-mutate-accepted-state",
+    "would-issue-authority",
+    "would-execute-governed-action",
+    "would-emit-verification-verdict",
+    "would-assign-burden",
+    "would-assign-remedy",
+    "would-assign-closure",
+    "would-assign-terminal-recourse",
+    "would-publish-proof-authority",
+    "would-operate-intake-authority"
+  ],
+  "adjacent_sovereign_surfaces": {
+    "law": "SYNTAGMARIUM",
+    "state": "ORBISTIUM",
+    "reconciliation": "CONSONORIUM",
+    "cognition": "TACHYRIUM",
+    "authority": "AUCTORISEAL",
+    "execution": "CORPIFORM",
+    "verification": "VERIFRAX",
+    "recourse": "REGRESSORIUM"
+  },
+  "review_rule": "recognition-object-requires-explicit-basis-and-terminal-non-recourse-boundary"
+}

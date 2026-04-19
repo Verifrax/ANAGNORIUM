@@ -9,5 +9,6 @@
       "subject_ref": "https://github.com/Verifrax/VERIFRAX/blob/main/evidence/artifact-0005/artifact-0005.json",
       "recognition_status": "RECOGNIZED"
     }
-  ]
+  ],
+  "historical": false
 }

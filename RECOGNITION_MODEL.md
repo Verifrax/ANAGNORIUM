@@ -22,3 +22,10 @@ Recognition does not define closure.
 ## Recognition chain
 
 - one current recognition-object entry surface is published at `recognitions/current/recognition-object-0001.json`
+
+## Machine-readable boundary surfaces
+
+- `contracts/boundary-policy.json`
+- `schemas/boundary-policy.schema.json`
+- `schemas/recognition-output.schema.json`
+- `schemas/recognition-audit-record.schema.json`

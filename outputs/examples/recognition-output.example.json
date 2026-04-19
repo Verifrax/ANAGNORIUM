@@ -1,0 +1,28 @@
+{
+  "object_type": "RECOGNITION_OUTPUT",
+  "schema_version": "0.1.0",
+  "output_id": "anagnorium-output-example-0001",
+  "generated_at": "2026-04-19T13:45:11Z",
+  "input_class": "recognition-case-reference",
+  "output_class": "recognition-index-update",
+  "status": "DERIVED_PROJECTION",
+  "summary": "Recognition index update derived from the active recognition object.",
+  "recognition_scope": "current recognition publication only",
+  "boundary_assertions": {
+    "not-law": true,
+    "not-state": true,
+    "not-authority": true,
+    "not-execution": true,
+    "not-verification": true,
+    "not-burden": true,
+    "not-remedy": true,
+    "not-closure": true,
+    "not-recourse": true,
+    "not-proof": true,
+    "not-intake": true,
+    "recognition-distinct-from-recourse": true
+  },
+  "basis_refs": [
+    "recognitions/current/index.json"
+  ]
+}

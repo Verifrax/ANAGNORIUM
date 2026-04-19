@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://verifrax.net/anagnorium/schemas/recognition-audit-record.schema.json",
+  "title": "ANAGNORIUM Recognition Audit Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "object_type",
+    "schema_version",
+    "audit_id",
+    "timestamp",
+    "input_class",
+    "requested_output_class",
+    "decision",
+    "rejection_reason",
+    "boundary_zone",
+    "sovereign_collision_flags",
+    "notes"
+  ],
+  "properties": {
+    "object_type": { "const": "RECOGNITION_AUDIT_RECORD" },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "audit_id": { "type": "string", "minLength": 1 },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "input_class": {
+      "enum": [
+        "claim-class-reference",
+        "law-version-reference",
+        "accepted-epoch-reference",
+        "authority-object-reference",
+        "execution-receipt-reference",
+        "verification-result-reference",
+        "recognition-case-reference",
+        "operator-request"
+      ]
+    },
+    "requested_output_class": {
+      "enum": [
+        "recognition-object",
+        "recognition-index-update",
+        "law-object",
+        "accepted-state-object",
+        "authority-object",
+        "execution-receipt",
+        "verification-verdict",
+        "burden-assignment",
+        "remedy-matrix",
+        "closure-state",
+        "recourse-object",
+        "proof-publication-object",
+        "intake-decision-object"
+      ]
+    },
+    "decision": {
+      "enum": [
+        "emitted",
+        "rejected",
+        "redirected"
+      ]
+    },
+    "rejection_reason": {
+      "enum": [
+        "not-applicable",
+        "input-class-unsupported",
+        "output-class-unsupported",
+        "would-author-law",
+        "would-mutate-accepted-state",
+        "would-issue-authority",
+        "would-execute-governed-action",
+        "would-emit-verification-verdict",
+        "would-assign-burden",
+        "would-assign-remedy",
+        "would-assign-closure",
+        "would-assign-terminal-recourse",
+        "would-publish-proof-authority",
+        "would-operate-intake-authority"
+      ]
+    },
+    "boundary_zone": {
+      "enum": [
+        "anagnorium-recognition",
+        "outside-anagnorium-boundary"
+      ]
+    },
+    "sovereign_collision_flags": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "law",
+        "state",
+        "authority",
+        "execution",
+        "verification",
+        "burden",
+        "remedy",
+        "closure",
+        "recourse",
+        "proof",
+        "intake"
+      ],
+      "properties": {
+        "law": { "type": "boolean" },
+        "state": { "type": "boolean" },
+        "authority": { "type": "boolean" },
+        "execution": { "type": "boolean" },
+        "verification": { "type": "boolean" },
+        "burden": { "type": "boolean" },
+        "remedy": { "type": "boolean" },
+        "closure": { "type": "boolean" },
+        "recourse": { "type": "boolean" },
+        "proof": { "type": "boolean" },
+        "intake": { "type": "boolean" }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}
