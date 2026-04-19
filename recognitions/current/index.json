@@ -6,8 +6,7 @@
     {
       "recognition_object_id": "recognition-object-0001",
       "path": "recognitions/current/recognition-object-0001.json",
-      "subject_ref": "https://github.com/Verifrax/VERIFRAX/blob/main/evidence/artifact-0005/artifact-0005.json",
-      "recognition_status": "RECOGNIZED"
+      "recognition_status": "ACTIVE_TRUTH"
     }
   ],
   "historical": false

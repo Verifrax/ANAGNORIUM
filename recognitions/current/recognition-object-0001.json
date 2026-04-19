@@ -23,12 +23,19 @@
   ],
   "notes": [
     "Current machine-readable recognition object for the active recognized boundary.",
-    "Historical recognition objects must not outrank this current recognition object."
+    "Historical recognition objects must not outrank this current recognition object.",
+    "This object binds authority reading, verification reading, and execution-receipt reading for the active terminal recognition boundary.",
+    "Recognition here does not itself create recourse.",
+    "Recognition here does not itself create continuity or transfer truth."
   ],
   "boundary_assertions": [
     "recognition does not assign burden",
     "recognition does not assign remedy",
     "recognition does not perform closure",
     "recognition does not redefine law, epoch, authority, execution, or verification"
-  ]
+  ],
+  "non_role_boundaries": {
+    "recourse": "Recognition is terminal recognition only. It does not itself create recourse.",
+    "continuity_transfer": "Recognition does not itself create continuity or transfer truth."
+  }
 }
