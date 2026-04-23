@@ -56,3 +56,7 @@ Recognition here is not closure.
 - current active recognition-object entry surface: `recognitions/current/recognition-object-0001.json`
 - current recognition index: `recognitions/current/index.json`
 - historical recognition-object archive: `recognitions/history/`
+
+## License
+
+This repository is licensed under the Apache License 2.0. See `LICENSE`.
