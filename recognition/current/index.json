@@ -1,0 +1,7 @@
+{
+  "object_type": "RecognitionObjectIndex",
+  "status": "ACTIVE_INDEX",
+  "current_recognition_object_id": "recognition-object-0001",
+  "current_recognition_object_ref": "recognition/current/recognition-object-0001.json",
+  "truth_warning": "INDEX_POINTER_NOT_RECOURSE_OBJECT"
+}
